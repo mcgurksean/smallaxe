@@ -1,0 +1,30 @@
+{% extends 'blog/__base.html' %}
+
+{% block navbar %}
+<div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">smallaxe.ie</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/thoughts/">Think</a></li>
+          <li><a href="/blog/">Say</a></li>
+          <li><a href="/projects/">Do</a></li>
+          <li><a href="/links/">Like</a></li>
+          <li class="active"><a href="/contact/">Contact</a></li>
+          <li><a href="/cv/">CV</a></li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+  <h2>Your message was sent.</h2>
+{% endblock content %}

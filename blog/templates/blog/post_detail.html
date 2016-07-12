@@ -1,13 +1,48 @@
-{% extends 'blog/base.html' %}
+{% extends 'blog/__base.html' %}
+
+{% block navbar %}
+<div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">smallaxe.ie</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/thoughts/">Think</a></li>
+          <li class="active"><a href="/blog/">Say</a></li>
+          <li><a href="/projects/">Do</a></li>
+          <li><a href="/links/">Like</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/cv/">CV</a></li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
 
 {% block content %}
-    <div class="post">
+<div class="container">
+    <div class="page-header">
+        <h1>{{ post.title }}</h1>
         {% if post.published_date %}
-            <div class="date">
+            <div class="intro">
                 {{ post.published_date }}
             </div>
         {% endif %}
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaks }}</p>
     </div>
+        <p>{% autoescape off %}{{ post.text|linebreaks|safe }}{% endautoescape %}</p>
+      </div>
+      <hr>
+      <div class="row">
+          <div class="col-sm-12">
+              <footer>
+                <a href="https://twitter.com/mcgurksean" class="twitter-follow-button" data-show-count="false">Follow @mcgurksean</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+              </footer>
+          </div>
+      </div>
 {% endblock %}

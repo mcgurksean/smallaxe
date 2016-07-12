@@ -1,0 +1,87 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap 3 Responsive Layout Example</title>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='//brick.a.ssl.fastly.net/Lora:400,700,400i,700i/Roboto:300,400,300i,400i' rel='stylesheet'>
+</head>
+<body>
+<nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">smallaxe.ie</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="http://www.tutorialrepublic.com" target="_blank">Home</a></li>
+                <li><a href="http://www.tutorialrepublic.com/about-us.php" target="_blank">About</a></li>
+                <li><a href="http://www.tutorialrepublic.com/contact-us.php" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div>
+      <div>
+        <section id="box-with-picture">
+        <div class="black-canvas">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
+                      <h1>
+                          “The most difficult subjects can be explained to the most slow-witted man if he has not formed any idea of them already; <br>
+                          but the simplest thing cannot be made clear to the most intelligent man if he is firmly persuaded that he knows already, <br>
+                          without a shadow of a doubt, what is laid before him.”
+                      </h1>
+                      <p>Leo Tolstoy, The Kingdom of Heaven is Within You</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <div class="post">
+        <h2>"Individuals and interactions over processes and tools"</h2>
+        <h4>- First principle of the Manifesto for Agile Software Development</h4>
+        <p>It's such a simple concept, really - and if it needed explaining at all, the authors themselves wrote: <i>"while there is value in the items on
+        the right</i> (processes and tools)<i>, we value the items on the left </i>(individuals and interactions)<i> more"</i>.</p>
+        <p>However, if anything, the processes and tools that surround how we build software have grown over time, often at the expense of individuals and to the detriment of interactions.</p>
+        <h3>My God, how did we get here?</h3>
+        <p>I believe that the manifesto is fundamentally right - we should be valuing 'individuals and interactions' (or 'people and communication' if you prefer).</p>
+        <p>However, fear of weakness, of saying 'I don't know', especially in what has been a male-dominated profession has led us to use these processes and tools as a form of defence, as a fig leaves to cover our lack of certainty and our vulnerability.</p>
+        <p>"How's the sprint going?"</p>
+        <p>"Look at this burndown chart and see for yourself!"</p>
+        <p>Not that measurement in itself is a bad thing - far from it. It just that oftentimes, it gives a false sense of confidence.</p>
+        <h3>So, what do we do?</h3>
+        <p>I haven't got all the answers but I won't pretend that I do.</p>
+        <p>From playing team sports all my life and studying psychology, I have a huge interest in what it takes to build and sustain a high-performing team.</p>
+        <p>If you share this interest, please feel free to explore the articles that I have written on the site and get in touch.</p>
+      </div>
+    </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-12">
+            <footer>
+                <p>smallaxe.ie</p>
+            </footer>
+        </div>
+    </div>
+</div>
+</body>
+</html>

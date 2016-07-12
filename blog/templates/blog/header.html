@@ -1,0 +1,891 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+  <title>Django Girls - start your journey with programming</title>
+  <meta name="description" content="Django Girls is a one-day workshop about programming in Python and Django for women.">
+  <meta name="keywords" content="programming, python, django, workshop, women, females">
+  <link href="/static/img/favicon.ico" rel="shortcut icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Django Girls is a one-day workshop about programming in Python and Django for women" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Join us and become a female developer! Build your first website in Python and Django in a friendly, safe environment." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/olasitarska/djangogirls/gh-pages/resources/graphics/logo_square.png" />
+
+  <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Lora:400,700,400i,700i/Roboto:300,400,300i,400i">
+  <link rel="stylesheet" href="{% static 'css/global-0e5446ca4b.css' %}">
+
+  <script type="text/javascript" src="https://djangogirls.org/static/vendor/js/jquery.min.js"></script>
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
+  <script type="text/javascript" src="https://djangogirls.org/static/vendor/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://djangogirls.org/static/vendor/js/sss.min.js"></script>
+
+    <script type="text/javascript" src="https://djangogirls.org//static/js/global-5b3df27e3b.js"></script>
+
+</head>
+<body>
+    <div class="page-wrap">
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <nav role="navigation" class="clearfix">
+                <div class="logo">
+                    <a href="/">
+                        <img src="https://djangogirls.org/static/img/global/logo.png" alt="Django Girls" />
+                    </a>
+                </div>
+
+                <ul>
+                    <li><a href="/events/">Events</a></li>
+                    <li><a href="/resources/">Resources</a></li>
+                    <li><a href="/organize/">Organize</a></li>
+                    <li><a href="/newsletter/">Newsletter</a></li>
+                    <li><a href="http://blog.djangogirls.org/">Blog</a></li>
+                    <li><a href="/contribute/">Contribute</a></li>
+                    <li><a href="https://www.patreon.com/djangogirls">Support us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <section id="box-with-picture">
+      <div class="black-canvas">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1>
+                        We inspire women to fall in love with programming.
+                    </h1>
+                    <p>
+                        Django Girls organize free Python and Django workshops, create open sourced online tutorials and curate amazing first experiences with technology.
+                    </p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+        <section id="about">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>What is Django Girls?</h2>
+                    <p>
+                        Django Girls is a <a href="/foundation/">non-profit organization</a> and a community that empowers and helps women to organize free, one-day programming workshops by providing tools, resources and support. We are a volunteer run organization with hundreds of people contributing to bring more amazing women into the world of technology. We are making technology more approachable by creating simpler tools and resources designed with empathy.
+                    </p>
+                    <p>
+                        During each of our events, 30-60 women build their first web application using HTML, CSS, Python and Django.
+                    </p>
+
+                </div>
+                <div class="col-md-6">
+                  <iframe src="//player.vimeo.com/video/112325567?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933" width="585" height="329" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Django Girls impact</h2>
+                    <p>
+                        Since 2014, an army of <span class="highlighted-number">406 volunteers</span> in the Django Girls community organized <span class="highlighted-number">202 events.</span> We've been to <span class="highlighted-number">153 cities</span> in <span class="highlighted-number">62 countries</span> (<a href="/events/map/">see them all on a map</a>).
+                    </p>
+                    <p>
+                        A total of <span class="highlighted-number">4947 incredible women attended</span> events organized by members of our community.
+                    </p>
+                    <p><a href="/2015/">Read our Annual Report to learn about the impact we make »</a></p>
+                </div>
+
+               <div class="col-md-6">
+                    <h2>Bring Django Girls to your city!</h2>
+                    <p>Is there no Django Girls event in your city? You can help make it happen!</p>
+                    <p>We open sourced the <a href="http://organize.djangogirls.org/">Organizer Manual</a> that provides you with all information required to organize Django Girls workshop. By volunteering to organize, you're joining a vibrant and supportive community of 406 organizers all over the world!</p>
+                    <p><a class="btn" href="/organize/">Apply to organize a workshop</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="events">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>
+                        Upcoming events
+                        <a class="ical btn btn-default btn-xs" href="/events/calendar.ics">ICAL</a>
+                        <a class="ical btn btn-default btn-xs" href="/events/map/">MAP</a>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="upcoming-events">
+                <div class="row-container">
+                    <div class="row">
+
+                        <a href="/akure">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/futa-gate.png)">
+        <div class="overlay">
+            <p class="city">Akure</p>
+            <span class="date">11th June 2016</span>
+            <p class="credit" rel="http://www.osundefender.org/wp-content/uploads/2014/01/FUTA-Gate.jpg">Photo credit: Mercy (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/warsaw">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/warsaw.jpg)">
+        <div class="overlay">
+            <p class="city">Warsaw</p>
+            <span class="date">19th June 2016</span>
+            <p class="credit" rel="">Photo credit: Radek Kołakowski (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/seattle">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/2172971114_45b6556551_b.jpg)">
+        <div class="overlay">
+            <p class="city">Seattle</p>
+            <span class="date">25th June 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/paraflyer/2172971114/in/set-72157650156626736">Photo credit: Tobias Haase (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+                        </div><div class="row">
+
+                        <a href="/amsterdam">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/amsterdam.jpg)">
+        <div class="overlay">
+            <p class="city">Amsterdam</p>
+            <span class="date">25th June 2016</span>
+            <p class="credit" rel="">Photo credit: Moyan Brenn (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/kansascity">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/7730952314_acaec44ca8_z.jpg)">
+        <div class="overlay">
+            <p class="city">Kansas City, MO</p>
+            <span class="date">25th June 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/zachwerner/7730952314/in/photolist-4SjwB-8tQbyw-MU5F-cMa9Mh-5DUkwH-nDHWS-9iYXex-3nd42F-32DSw-7kW6Qg-egdykt-cFjJZ7-ropkqx-7X9QAA-aKGoKZ-LobZJ-CWph9-ahUeoK-d6ZEU-7t4Rd-d6ZF">Photo credit: Zach Werner (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/belfast">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/belfast.jpg)">
+        <div class="overlay">
+            <p class="city">Belfast</p>
+            <span class="date">25th June 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/jonnymckee/7366104564/">Photo credit: Jonathan Mckee (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+                        </div><div class="row">
+
+                        <a href="/turin">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/8240347087_d79290a128_z.jpg)">
+        <div class="overlay">
+            <p class="city">Turin</p>
+            <span class="date">2nd July 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/furanda/8240347087/in/photolist-dyaW6M-dJbXgK-qcGLrF-vSqh4X-pUrv7k-9xsQeo-8YNh1a-AttPck-prxeUx-8qAKh-f1mG7D-5nNDmf-r7cYzw-939VmR-5mPZfd-pzjYNR-ucyrC-7V7t9d-hsawb4-5qDZcL-">Photo credit: Cristiano Gatti (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/kochi">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/theme_color_cheena_vala.jpg)">
+        <div class="overlay">
+            <p class="city">Kochi</p>
+            <span class="date">2nd July 2016</span>
+
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/brisbane">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/25771581406_b8beb6d14d_z.jpg)">
+        <div class="overlay">
+            <p class="city">Brisbane</p>
+            <span class="date">2nd July 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/lennykphotography/25771581406/in/photolist-Fgm6hs-8xjgru-w8LHyE-zJmaEM-yQAFRU-rPULNH-ot9dRH-w6UVpS-ngPgyz-BJ9BkL-4vmx8G-4kJFPu-5Db2hZ-8otRmh-7bskD4-CRAskF-nqxCnE-cxgtaL-o">Photo credit: Lenny K Photography (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+                        </div><div class="row">
+
+                        <a href="/kiev">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/8828664868_915ec63f92_z.jpg)">
+        <div class="overlay">
+            <p class="city">Kiev</p>
+            <span class="date">3rd July 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/d1mkavetrov/8828664868/in/photolist-esadtN-dgHdwH-s99Z5c-9zRtt9-kFUFZo-6ZuoiN-bkCkpn-br9R7y-7JuhwK-dPqCaj-rWuKxh-DDQfgw-AwatsQ-Bj7XZY-t6SwDG-bGZcZr-esa8Rj-moJK94-rXugT9-B">Photo credit: d1mka vetrov (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/taipei">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/taipei.jpg)">
+        <div class="overlay">
+            <p class="city">Taipei</p>
+            <span class="date">9th July 2016</span>
+            <p class="credit" rel="">Photo credit: Andy Enero (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/guayaquil">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/16535950614_28472f53aa_z.jpg)">
+        <div class="overlay">
+            <p class="city">Guayaquil</p>
+            <span class="date">9th July 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/descubriendo-el-mundo/16535950614/in/photolist-rce51N-9Muftw-5xjDAr-zCEa72-v5EY3R-uMNKuE-rPUtBV-fEE5Cy-nDqvEM-rPUdJi-nBqcwy-s6WhGh-nk9Ukk-6X5tmR-dSTDy-s6W9xw-8x2EMr-u8nMC">Photo credit: descubriendoelmundo (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+                        </div><div class="row">
+
+                        <a href="/oau">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/oau1.jpg)">
+        <div class="overlay">
+            <p class="city">Ile-Ife</p>
+            <span class="date">16th July 2016</span>
+            <p class="credit" rel="https://commons.wikimedia.org/wiki/File:Main_Campus,_Obafemi_Awolowo_University,_Ile-Ife,_Osun_State,_Nigeria_%2812997698895%29.jpg">Photo credit: Lekan (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/europython2016">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/2874554135_8e96047ec2_z.jpg)">
+        <div class="overlay">
+            <p class="city">Bilbao</p>
+            <span class="date">17th July 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/miss_ohara/2874554135/in/photolist-5o1QNc-4Ptgez-5Yy1L6-7bhhKp-hkMPCi-5Pqfoe-6g5x2r-6fUeQA-7fx69e-98VALf-6g5vba-aSg1QX-pfX9YD-6gp5Ui-ajscMu-4NfRzN-s2oV8B-q3vjPJ-oW99b5-6g">Photo credit: miss_ohara (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/philadelphia">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/3696917154_02624f075f_z.jpg)">
+        <div class="overlay">
+            <p class="city">Philadelphia, PA</p>
+            <span class="date">21st July 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/fordan/3696917154/in/photolist-6CFEEW-cgHmbL-c2gLD9-boYZPA-5YuPCg-AFRwDs-fo4wqn-jMQX4x-7pqDNd-5rmK4v-ma5aox-mxB23D-dpzeTH-7CLYiR-dmHyXj-mn4Qyg-gS4Ltj-qNmS99-mcaCAe-nVPkS3">Photo credit: Bob Snyder (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+                        </div><div class="row">
+
+                        <a href="/portharcourt">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/70368427_4b98c50d51_z.jpg)">
+        <div class="overlay">
+            <p class="city">Port-Harcourt</p>
+            <span class="date">23rd July 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/-rhys-/70368427/in/photolist-7dE5K-7dEiG-7dEto-7dEyE-7dEfU-7dEqT-7dEvU-7dENP-7dEHM-7dEWg-7dESr-7dECt-D7pKGx-DcnkfL-D7qzDV-CFd1dZ-D57Lf3-DeGMCV-DeGEyp-Chinaa-DeGR8F-ChbaCs">Photo credit: Rhys Thom (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/sandiego">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/4103920229_cb4f218887_z.jpg)">
+        <div class="overlay">
+            <p class="city">San Diego</p>
+            <span class="date">30th July 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/masteryofmaps/4103920229/in/photolist-7fDEvk-dRsv5v-nedCcT-8QyhRx-8Q75yU-8Q3XWF-8Q7525-8Q75Qq-M8rve-7fDEVR-68v1b6-d56BSq-fsfbZ5-obqw4q-5qvavD-8QxJsp-9sJK1P-oPBv3W-pLsUNF-">Photo credit: Michael Huey (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/washington">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/9344740612_c8779d6c76_z.jpg)">
+        <div class="overlay">
+            <p class="city">Washington, DC</p>
+            <span class="date">August 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/89545244@N03/9344740612/in/photolist-feLePs-djKdKS-9sjtrL-bFWo5T-3be9pt-bLqgyB-dyrfrW-e5ubkn-4F891W-cEe4gd-4RhJN1-9BQvkr-9U38t3-ea8K6C-6wzq1y-frFArF-547hDe-6wv23t-6zXjcs-">Photo credit: Ismo (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+                        </div><div class="row">
+
+                        <a href="/belfastmc">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/belfast.jpg)">
+        <div class="overlay">
+            <p class="city">Belfast</p>
+            <span class="date">August 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/jonnymckee/7366104564/">Photo credit: Jonathan Mckee (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/sanrafael">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/640px-Calle_de_San_Rafael_Mendoza_Argentina.jpg)">
+        <div class="overlay">
+            <p class="city">San Rafael</p>
+            <span class="date">5th August 2016</span>
+            <p class="credit" rel="https://cs.wikipedia.org/wiki/San_Rafael_(Mendoza)#/media/File:Calle_de_San_Rafael,_Mendoza,_Argentina.jpg">Photo credit: Nicolás Lichtmaier (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/generalalvear">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/640px-Sucursal_del_Banco_Naci%C3%B3n_en_General_Alvear.jpg)">
+        <div class="overlay">
+            <p class="city">General Alvear</p>
+            <span class="date">6th August 2016</span>
+            <p class="credit" rel="https://commons.wikimedia.org/wiki/File:Sucursal_del_Banco_Nación_en_General_Alvear.JPG">Photo credit: Federico Gomez Aghetta (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+                        </div><div class="row">
+
+                        <a href="/pune">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/hh.jpg)">
+        <div class="overlay">
+            <p class="city">Pune</p>
+            <span class="date">6th August 2016</span>
+            <p class="credit" rel="https://flic.kr/p/urZDGr">Photo credit: Shagufta Methwani (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/ota">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/15643374408_0dc333813e_z_pCdsKVs.jpg)">
+        <div class="overlay">
+            <p class="city">Ota</p>
+            <span class="date">6th August 2016</span>
+            <p class="credit" rel="">Photo credit: Django Girls Kraków (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/portoalegre">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/portoalegre.jpg)">
+        <div class="overlay">
+            <p class="city">Porto Alegre</p>
+            <span class="date">13th August 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/gordon-s/17125934799/in/photolist-s6mTKV-6zXKkr-f4RWMD-bUFviM-8dSvpj-eHrNyx-9buXtk-pTpx2c-6XHPQF-bRrsVt-o7XygV-6G8KND-dtTzh5-fP9bFs-jumcUy-rWLurf-CEKGYS-fNRGZ4-fNRFzX-yxU">Photo credit: Gordon (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+                        </div><div class="row">
+
+                        <a href="/antananarivo">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/6931438158_ef0e6048de_z.jpg)">
+        <div class="overlay">
+            <p class="city">Antananarivo</p>
+            <span class="date">15th August 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/franxx/6931438158/in/photolist-7mzrV6-byvr5s-4ZGM8b-4TUsce-4TYM1E-4TUtjV-4TYFZj-5sbASM-7tBYEi-5V2eup-4TUxYK-4TUsak-4TUw9r-4TUwmi-4TUvkX-4TUwDp-4TYKQ3-4TUwdH-5V6AWf-4TYLnC">Photo credit: Franx&#39; (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/ahmedabad">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/4184194256_f1b3e72bb6_z.jpg)">
+        <div class="overlay">
+            <p class="city">Ahmedabad</p>
+            <span class="date">27th August 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/chrismar/4184194256/in/photolist-7nK6bh-bmsnmP-jCaxeE-bmsDpx-4J4NUJ-e1YVbk-6VN6WL-ak86zC-47BS21-ixmqsu-8wGwBq-7Zvhza-efdUjN-47C3g7-bnpRvs-E26nkE-gLR626-gLRZYg-5fT9rW-8mo9">Photo credit: Chris Martino (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/berlin">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/12674090784_7158497e39_z_fpPsNKC.jpg)">
+        <div class="overlay">
+            <p class="city">Berlin</p>
+            <span class="date">27th August 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/eisbaerchen/12674090784/">Photo credit: Carmen Eisbär (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+                        </div><div class="row">
+
+                        <a href="/lagos">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/16573672765_56e7dd99ce.jpg)">
+        <div class="overlay">
+            <p class="city">Lagos</p>
+            <span class="date">September 2016</span>
+            <p class="credit" rel="https://c1.staticflickr.com/3/2856/10255653446_a008b4ebba_b.jpg/4185089020/">Photo credit: CE Blueclouds (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/minna">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/15643374408_62c2725773_o.jpg)">
+        <div class="overlay">
+            <p class="city">Minna</p>
+            <span class="date">September 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/djangogirls/15643374408/in/album-72157649308746176/">Photo credit: Django Girls (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/oxford">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/oxford.jpg)">
+        <div class="overlay">
+            <p class="city">Oxford</p>
+            <span class="date">September 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/bishi/2188954839/">Photo credit: bishib70 (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+                        </div><div class="row">
+
+                        <a href="/pyconuk2016">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/4297538463_da210d9229_z.jpg)">
+        <div class="overlay">
+            <p class="city">Cardiff</p>
+            <span class="date">15th September 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/geezaweezer/4297538463">Photo credit: Geraint Rowland (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/harare">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/3352460866_cb97a31b7e_z.jpg)">
+        <div class="overlay">
+            <p class="city">Harare</p>
+            <span class="date">15th September 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/mifl68/3352460866/in/photolist-67fePq-67fd2b-67b45F-67aTGR-67aUPk-67fief-dFPbcf-d26dTA-e4TnV4-e4TnjT-e4Tm8a-e4Toe6-e4Tn1i-e4TmkK-e4Tori-e4TnFR-e4Z3rJ-e4YYCY-e4Z37G-e4TmC6">Photo credit: mifl68 (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/bern">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/Bern.JPG)">
+        <div class="overlay">
+            <p class="city">Bern</p>
+            <span class="date">24th September 2016</span>
+            <p class="credit" rel="">Photo credit: Sara Peeters (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+                        </div><div class="row">
+
+                        <a href="/portland">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/7731162226_801c81287a_z_rJJuOam.jpg)">
+        <div class="overlay">
+            <p class="city">Portland</p>
+            <span class="date">24th September 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/nathanpirtz/7731162226/in/photolist-cMbebs-r7SPf-eeonYh-aQve9x-8jKjS7-jBqmWn-f6Jj68-gQ2BwV-jSJhFc-aDAfw2-hTKjQk-4RBjXk-qRQrEp-eyWh9E-dy2y5y-jUYNCp-gwvxH4-atZvWk-rbuutP-9H">Photo credit: Michael Vesia (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/umea">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/7051596665_816d3a1097_z.jpg)">
+        <div class="overlay">
+            <p class="city">Umeå</p>
+            <span class="date">October 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/oskam/7051596665/in/photolist-bK8h1R-e27Vi2-bCX3XA-buLneS-bCX3YC-3i6ev6-rCxr3J-8bNFgo-bCX419-8bKkhp-8bKnfg-8bKmqM-8bKnVz-a6VUuH-bCX47o-bCX43q-iZoZSL-8RUSZb-mqr6S-bCX46d-b">Photo credit: Oscar Amaya (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/almeria">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/FotoAlmeria.png)">
+        <div class="overlay">
+            <p class="city">Almería</p>
+            <span class="date">7th October 2016</span>
+            <p class="credit" rel="https://www.flickr.com/groups/enamoradosdealmeria/">Photo credit: Cristian Vichez (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+                        </div><div class="row">
+
+                        <a href="/florianopolis">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/4396378654_69073d5025_z.jpg)">
+        <div class="overlay">
+            <p class="city">Florianopolis</p>
+            <span class="date">14th October 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/fran001/4396378654/in/photolist-7GuAcY-byQxtL-bMKewV-bMKdRp-9cRRm8-byQwQs-rvE6MG-8g2gNf-8mHj88-81Hhb6-bDdvPh-8wutnD-81Hhbe-81HhaZ-81Hhb4-dhY55W-wZaxd-q23UkK-dhY53j-bDdFuS">Photo credit: Francisco Anzola (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/milano">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/345753070_78ed0a1856_z.jpg)">
+        <div class="overlay">
+            <p class="city">Milano</p>
+            <span class="date">November 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/43729053@N00/345753070/in/photolist-wy5kQ-c6LMCj-rFB3Zs-vWT5VP-rPMdKU-qPRV6F-7BqKJ5-uV2zi4-rhs4ah-cs7EsW-E7Dzz6-s6Ti2J-byn7Sd-r1CQjh-pnSpdn-hV7zXf-sd4KGn-6eT3Eg-sgv1hE-vo">Photo credit: anglogean (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/maceio">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/12606938_815346311945338_398426559_n.jpg)">
+        <div class="overlay">
+            <p class="city">Maceió</p>
+            <span class="date">November 2016</span>
+            <p class="credit" rel="">Photo credit: Andrea Secche (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+                        </div><div class="row">
+
+                        <a href="/leipzig">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/7309941196_90a01810fe_z.jpg)">
+        <div class="overlay">
+            <p class="city">Leipzig</p>
+            <span class="date">19th November 2016</span>
+            <p class="credit" rel="https://www.flickr.com/photos/matze-ex1/7309941196/in/photolist-c8XmQU-oyeVfM-bHn18k-obK8Dc-o7kiB1-oWvHBg-oqcjau-ruNfbR-pziWop-9PGwev-5BmFqx-D1GcQr-suMTva-7B3PNY-oJhAPr-7xxq4a-88EKXk-7xxrBR-WWkBv-pBt5">Photo credit: MatthiasX1 (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                        <a href="/brazzaville">
+    <div class="col-md-4 event" style="background-image: url(/uploads/event/cities/640px-Kindepuisbrazza.jpg)">
+        <div class="overlay">
+            <p class="city">Brazzaville</p>
+            <span class="date">December 2016</span>
+            <p class="credit" rel="https://en.wikipedia.org/wiki/File:Kindepuisbrazza.jpg#/media/File:Kindepuisbrazza.jpg">Photo credit: Marcel Buob (<span rel="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC</span>)</p>
+        </div>
+    </div>
+</a>
+
+
+
+                    </div>
+                </div>
+                <div class="show-more"><a href="javascript:;">Show all 41 upcoming events »</a></div>
+            </div>
+        </section>
+
+        <section id="story">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Badass Django Ladies</h2>
+                    <p>Each week we try to introduce one badass lady who use Python or Django and highlight her work:</p>
+
+                    <div class="row">
+
+                        <a href="http://blog.djangogirls.org/post/144095625648" target="_blank">
+    <div class="col-md-3 girl" style="background-image: url(/uploads/stories/Lb4Wusk_qOukYB0.jpg);">
+        <div class="overlay">Jessica McCay</div>
+    </div>
+</a>
+
+
+                        <a href="http://blog.djangogirls.org/post/143378817643" target="_blank">
+    <div class="col-md-3 girl" style="background-image: url(/uploads/stories/fZpA0BT.jpg);">
+        <div class="overlay">Margaret Myrick</div>
+    </div>
+</a>
+
+
+                    </div>
+
+                    <p><a href="/story/">Read all Django Stories »</a></p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Latest from our blog</h2>
+
+                    <a href="http://blog.djangogirls.org/post/145199274618" target="_blank" class="post-title">Django Stars is Django Girls new global sponsor ❤️</a>
+                    <p class="post-content">We have an amazing news to share: after sponsoring Django Girls Dnipropetrovsk and Kiev workshops, Django Stars decided to become our new global sponsor!Django Stars ... <a href="http://blog.djangogirls.org/post/145199274618" target="_blank">Read all »</a></p>
+
+                    <a href="http://blog.djangogirls.org/post/145144780413" target="_blank" class="post-title">Django Girls Harare Workshop</a>
+                    <p class="post-content">This blog post was written by Anna Makarudze and Humphrey Butau. Thanks ❤️Our first Django Girls Harare event took place on the 9th of April ... <a href="http://blog.djangogirls.org/post/145144780413" target="_blank">Read all »</a></p>
+
+                    <a href="http://blog.djangogirls.org/post/144095625648" target="_blank" class="post-title">Jessica Waldrop</a>
+                    <p class="post-content">This is a post in our Your Django Story series where we highlight awesome ladies who work with Django. Read more about it here. Jessica ... <a href="http://blog.djangogirls.org/post/144095625648" target="_blank">Read all »</a></p>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="support">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Support our work</h2>
+                    <p>Django Girls is a volunteer run organization, and we depend on your support to make it happen.</p>
+                    <p class="support-stats">
+                        <span class="highlighted-number">$1078</span> of <span class="highlighted-number">$1500</span> monthly goal pledged
+                    </p>
+                    <div class="support-bar">
+                      <div class="pledge" style="width: 71%">71%</div>
+                    </div>
+                    <a class="btn" href="http://patreon.com/djangogirls">Make a recurring donation on Patreon</a>
+                    <p class="partnership">
+                        You can also send us a one time donation with <a href="https://www.paypal.com/uk/webapps/mpp/search-cause?charityId=129929&s=3">Paypal Giving Funds</a>.
+                        If you would like to discuss a bigger partnership, <a href="/contact/">please get in touch</a>.
+                    </p>
+                </div>
+
+                 <div class="col-md-6">
+                    <h2>Stay up to date!</h2>
+                    <p>
+                        Subscribe to Django Girls Dispatch to receive the latest and greatest from our community every two weeks, straight to your inbox!
+                    </p>
+                    <p>
+                      <form action="http://test2975.createsend.com/t/i/s/tykhhd/" method="post" id="subForm" class="newsletter">
+                          <input id="fieldEmail" name="cm-tykhhd-tykhhd" type="email" placeholder="you@reaweso.me" required />
+                          <input type="submit" value="Subscribe" />
+                      </form>
+                    </p>
+                    <p>
+                        <a href="/newsletter/">See the Django Girls Dispatch archives »</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Buy a t-shirt!</h2>
+                </div>
+                <div class="col-md-6">
+                    <p>
+                        Help us spread the word about Django Girls while supporting us!
+                    </p>
+                    <p>We now have three awesome designs for fitted and straight-cut t-shirts: <a href="https://store.djangogirls.org/collections/frontpage/products/this-is-what-a-programmer-looks-like">"This is What a Programmer Looks Like"</a>, <a href="https://store.djangogirls.org/collections/frontpage/products/fitted-code-like-a-girl-t-shirt">"Code like a Girl"</a> and <a href="https://store.djangogirls.org/collections/frontpage/products/fitted-django-girls-t-shirt"> Django Girls logo</a>.</p>
+                    <p>
+                         All proceeds will go to two new projects:
+                        <ul>
+                    <li>Django Girls Summit: a two day unconference where organizers could meet and share their experiences about Django Girls workshops.</li>
+                    <li>Django Girls Organizer Starter Kit: a swag boxes for organizers full of stickers, buttons and tattoos!</li>
+                        </ul>
+                    </p>
+
+                    <p><a href="https://store.djangogirls.org/" class="btn">Get your t-shirt today!</a></p>
+
+                </div>
+                <div class="col-md-6">
+                    <a href="https://store.djangogirls.org/">
+                        <img src="/static/img/global/tshirt.png" alt="Mint 'Code like a Girl' and cranberry 'This is what a programmer looks like' t-shirts."/>
+                    </a>
+                </div>
+            </div>
+            </section>
+
+        <section id="supporters">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>They already support us! 💕</h2>
+                    <p>Those incredible companies made a pledge to diversity and are actively helping us to change the ratio in the tech industry. <br /> If you wish to join them, support us on <a href="https://www.patreon.com/djangogirls">Patreon</a> or <a href="/contact/">drop us a line</a>.</p>
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3">
+                  <a href="https://www.elastic.co/">
+                      <img src="/static/img/global/supporters/elastic.png" alt="Elastic" />
+                  </a>
+              </div>
+              <div class="col-md-3">
+                  <a href="https://p.ota.to/jobs/">
+                      <img src="/static/img/global/supporters/potato.svg" alt="Potato" style="height: 120px;" />
+                  </a>
+              </div>
+              <div class="col-md-3">
+                  <a href="http://lincolnloop.com/">
+                      <img src="/static/img/global/supporters/lincolnloop.png" alt="Lincoln Loop" />
+                  </a>
+              </div>
+              <div class="col-md-3">
+                  <a href="http://djangostars.com/">
+                      <img src="/static/img/global/supporters/djangostars.png" alt="Django Stars" />
+                  </a>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3">
+                  <a href="http://www.divio.ch/en/">
+                      <img src="/static/img/global/supporters/divio.png" alt="Divio" style="margin-top: 25px" />
+                  </a>
+              </div>
+              <div class="col-md-3">
+                  <a href="http://pythonanywhere.com/">
+                      <img src="/static/img/global/supporters/pythonanywhere.png" alt="Python Anywhere" style="margin-top: 25px" />
+                  </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://www.mailchimp.com/">
+                        <img src="/static/img/global/supporters/mailchimp.png" alt="Mailchimp" style="margin-top: 0px" />
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+
+    </div>
+
+
+        <footer>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-2">
+                <p>Django Girls</p>
+                <ul>
+                    <li><a href="/faq/">FAQ</a></li>
+                    <li><a href="/foundation/">Foundation</a></li>
+                    <li><a href="/newsletter/">Newsletter</a></li>
+                    <li><a href="http://gitter.im/DjangoGirls/tutorial"><strong>Chat with us!</strong></a></li>
+                    <li><a href="/pages/coc/">Code of Conduct</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-2">
+                <p>Support us</p>
+                <ul>
+                    <li><a href="/donate/">Make a donation</a></li>
+                    <li><a href="https://www.patreon.com/djangogirls">Donate on Patreon</a></li>
+                    <li><a href="/contribute/">Contribute</a></li>
+                    <li><a href="https://www.stickermule.com/user/1068790133/stickers">Buy a sticker</a></li>
+                    <li><a href="http://bit.ly/sponsordg">Sponsor us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <p><a href="/community/">Community</a></p>
+                <ul>
+                    <li><a href="/community/jobs">Job opportunities</a></li>
+                    <li><a href="/community/meetups">Meetups</a></li>
+                    <li><a href="http://facebook.com/djangogirls">Facebook</a></li>
+                    <li><a href="http://twitter.com/djangogirls">Twitter</a></li>
+                    <li><a href="http://github.com/djangogirls">Github</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-2">
+                <p>Resources</p>
+                <ul>
+                    <li><a href="http://tutorial.djangogirls.org/">Tutorial</a></li>
+                    <li><a href="http://organize.djangogirls.org/">Organizer's Manual</a></li>
+                    <li><a href="http://coach.djangogirls.org/">Coaching Guide</a></li>
+                    <li><a href="http://djangogirls.gitbooks.io/django-girls-tutorial-extensions/">Tutorial Extensions</a></li>
+                    <li><a href="https://github.com/DjangoGirls/resources">Graphics</a></li>
+                </ul>
+            </div>
+
+             <div class="col-md-2">
+                <p>Website</p>
+                <ul>
+                    <li><a href="/terms-conditions/">Terms & Conditions</a></li>
+                    <li><a href="/privacy-cookies/">Privacy & Cookies</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-2">
+                <p>♥</p>
+                <ul>
+                    <li><b>41</b> upcoming events</li>
+                    <li><b>161</b> past events</li>
+                    <!--- tags to do for job opportunities -->
+                    <li><b>0</b> upcoming meetups</li>
+                    <li><b>17329</b> applicants</li>
+                    <li><b>4947</b> attendees</li>
+                    <li><b>62</b> countries</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+
+    <!-- fb -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/all.js#xfbml=1&appId=345022845576638";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+<!-- twitter -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<!-- analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-51680040-1', 'djangogirls.org');
+      ga('send', 'pageview');
+
+    </script>
+
+</body>
+</html>

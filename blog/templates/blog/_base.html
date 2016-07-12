@@ -1,0 +1,78 @@
+{% extends 'blog/__base.html' %}
+
+{% block navbar %}
+<div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">smallaxe.ie</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/thoughts/">Think</a></li>
+          <li><a href="/blog/">Say</a></li>
+          <li><a href="/projects/">Do</a></li>
+          <li><a href="/links/">Like</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/cv/">CV</a></li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div>
+      <div>
+        <section id="box-with-picture">
+        <div class="black-canvas">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
+                    <h1>
+                        If you are the big tree,<br>
+                        we are the small axe
+                    </h1>
+                    <p>
+                        Ready to cut you down. To cut you down.
+                    </p>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="page-header">
+        <p class="intro">"Individuals and interactions over processes and tools"</p>
+        <p class="author">- First principle of the Manifesto for Agile Software Development</p>
+      </div>
+        <p>It's such a simple concept, really - and if it needed explaining at all, the authors themselves wrote: <i>"while there is value in the items on
+        the right</i> (processes and tools)<i>, we value the items on the left </i>(individuals and interactions)<i> more"</i>.</p>
+        <p>However, if anything, the processes and tools that surround how we build software have grown over time, often at the expense of individuals and to the detriment of interactions.</p>
+        <h3>My God, how did we get here?</h3>
+        <p>I believe that the manifesto is fundamentally right - we should be valuing 'individuals and interactions' (or 'people and communication' if you prefer).</p>
+        <p>However, fear of weakness, of saying 'I don't know', especially in what has been a male-dominated profession has led us to use these processes and tools as a form of defence, as a fig leaves to cover our lack of certainty and our vulnerability.</p>
+        <p>"How's the sprint going?"</p>
+        <p>"Look at this burndown chart and see for yourself!"</p>
+        <p>Not that measurement in itself is a bad thing - far from it. It just that oftentimes, it gives a false sense of confidence.</p>
+        <h3>So, what do we do?</h3>
+        <p>I haven't got all the answers but I won't pretend that I do.</p>
+        <p>From playing team sports all my life and studying psychology, I have a huge interest in what it takes to build and sustain a high-performing team.</p>
+        <p>If you share this interest, please feel free to explore the articles that I have written on the site and get in touch.</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+      <div class="col-sm-12">
+          <footer>
+            <a href="https://twitter.com/mcgurksean" class="twitter-follow-button" data-show-count="false">Follow @mcgurksean</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          </footer>
+      </div>
+  </div>
+{% endblock %}

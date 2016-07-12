@@ -1,0 +1,56 @@
+{% extends 'blog/__base.html' %}
+
+{% block navbar %}
+<div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">smallaxe.ie</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/thoughts/">Think</a></li>
+          <li><a href="/blog/">Say</a></li>
+          <li><a href="/projects/">Do</a></li>
+          <li class="active"><a href="/links/">Like</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/cv/">CV</a></li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+<div class="page-header">
+  <h1>Links</h1>
+    <p class="intro">Just a list of the stuff that's rockin my world...</p>
+</div>
+              <p>
+                <a href="http://www.meetup.com/Belfast-Vinyl-Meetup/">Belfast Vinyl Club</a> is group for vinyl enthusiasts in the Belfast area. The idea behind the group is that we will meet to listen to, discuss and swap vinyl records and share our passion for all things audio polyvinyl chloride.
+              </p>
+              <p>
+                <a href="https://djangogirls.org/">Django Girls</a> is a non-profit organization and a community that empowers and helps women to organize free, one-day programming workshops by providing tools, resources and support.
+              </p>
+              <p>
+                <a href="http://www.savetheinternet.com/net-neutrality-what-you-need-know-now">Net Neutrality</a> means an Internet that enables and protects free speech. It means that Internet service providers should provide us with open networks — and should not block or discriminate against any applications or content that ride over those networks.
+              </p>
+              <p>
+                <a href="http://www.tyci.org.uk/wordpress/">TYCI</a> is a collective run by a handful of artists, musicians, bloggers, writers and producers in Glasgow. It is a website, zine, radio show, podcast and live event series promoting all things femme, with contributors now based across the world.
+              </p>
+              </div>
+              <hr>
+              <div class="row">
+                  <div class="col-sm-12">
+                      <footer>
+                        <a href="https://twitter.com/mcgurksean" class="twitter-follow-button" data-show-count="false">Follow @mcgurksean</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                      </footer>
+                  </div>
+              </div>
+
+{% endblock %}

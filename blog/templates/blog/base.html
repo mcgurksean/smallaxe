@@ -1,23 +1,57 @@
 {% load staticfiles %}
 <html>
-    <head>
-        <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    </head>
-    <body>
-      <div class="page-header">
-          <h1><a href="/">Django Girls Blog</a></h1>
-      </div>
-      <div class="content container">
-          <div class="row">
-              <div class="col-md-8">
-              {% block content %}
-              {% endblock %}
-              </div>
-          </div>
-      </div>
-    </body>
+
+<head>
+    <title>smallaxe.ie</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='//brick.a.ssl.fastly.net/Lora:400,700,400i,700i/Roboto:300,400,300i,400i' rel='stylesheet'>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link rel="stylesheet" href="{% static 'css/global-0e5446ca4b.css' %}">
+</head>
+
+<body>
+
+    <div class="page-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav role="navigation" class="clearfix">
+                        <div class="logo">
+                            <a href="/">
+                                <img src="{% static 'images/14.png' %}" alt="Mountain View">
+                            </a>
+                        </div>
+
+                        <ul>
+                            <li>| </li>
+                            <li><a href="/thoughts/">Thoughts</a></li>
+                            <li>| </li>
+                            <li><a href="/blog/">Words</a></li>
+                            <li>| </li>
+                            <li><a href="/projects/">Deeds</a></li>
+                            <li>| </li>
+                            <li><a href="/cv/">Skills</a></li>
+                            <li>| </li>
+                            <li><a href="/links/">Loves</a></li>
+                            <li>| </li>
+                            <li><a href="/contact/">Shouts</a></li>
+                            <li>| </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <section id="about">
+                <div class="row">
+                    <div>
+                        {% block content %} {% endblock %}
+                    </div>
+                </div>
+        </div>
+</body>
+
 </html>
